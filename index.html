@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>商户资金看板</title>
+    <script>
+      ;(() => {
+        const previewFile = '打开预览.html'
+        const isPreviewFile = decodeURIComponent(window.location.pathname).endsWith(`/${previewFile}`)
+
+        if (window.location.protocol === 'file:' && !isPreviewFile) {
+          window.location.replace(new URL(`./${previewFile}`, window.location.href).href)
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
