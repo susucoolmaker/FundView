@@ -1,17 +1,27 @@
 # GitHub 上传说明
 
-这个文件夹是专门给 GitHub Pages 上传使用的版本。
+请上传这个文件夹里面的内容，不要只上传外层文件夹本身。
 
-请把本文件夹里的所有内容上传到仓库根目录：
+需要上传到 GitHub 仓库根目录的内容：
 
-- `.nojekyll`
 - `index.html`
 - `404.html`
 - `assets` 文件夹
-- `README-上传说明.md`
+- `docs` 文件夹（给前端看的说明文档，可保留）
+- `README-上传说明.md`（本说明，可保留）
 
-注意：`.nojekyll` 是隐藏文件，如果在 Mac 访达里看不到，可以按 `Command + Shift + .` 显示隐藏文件。
+上传后访问：
 
-手机如果还看到旧页面，请在访问链接后面加一个版本号，例如：
+```text
+https://你的GitHub用户名.github.io/仓库名/#/dashboard
+```
 
-`?v=20260724-v5`
+注意：
+
+- `404.html` 必须保留，用于手机或刷新页面时兼容 GitHub Pages。
+- `assets` 文件夹必须和 `index.html` 在同一级。
+- 如果手机仍然看到旧页面，优先清理手机浏览器缓存，或在链接后面加版本参数，例如：
+
+```text
+https://你的GitHub用户名.github.io/仓库名/#/dashboard?v=20260727-v1
+```
